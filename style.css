@@ -8,14 +8,21 @@
     display: flex;
     flex-direction: row;
   }
-  ul{
+  #nav-bar{
     display: flex;
     flex-direction: row;
     gap: 1em;
-    list-style: none;
+    margin: auto 0.25em auto 0;
   }
-  a{
-    text-decoration: none;
+  .nav-link{
+    border: 2px solid white;
+    padding: 0.5em;
     color: white;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
   }
-  
+  .nav-link:hover{
+    color: darkblue;
+    background-color: white;
+  }
