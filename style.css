@@ -5,5 +5,17 @@
   }
   #header{
     background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
     color: white;
   }
+  
