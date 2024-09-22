@@ -46,7 +46,7 @@
     align-items: center;
     margin-top: 2em;
     margin-bottom: 2em;
-    grid-row: 4 / 5;
+    grid-row: 8 / 9;
   }
   #email{
     width: 50%;
@@ -69,14 +69,18 @@
     width: 35%;
   }
   #mens{
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
+    margin: 1em;
   }
   #womens{
-    grid-row: 6 / 7;
+    grid-row: 5 / 6;
+    margin: 1em;
   }
   #kids{
-    grid-row: 7 / 8;
+    grid-row: 6 / 7;
+    margin: 1em;
   }
   #brand-new{
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
+    margin: 1em;
   }
