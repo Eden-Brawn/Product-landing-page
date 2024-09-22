@@ -3,11 +3,20 @@
     margin: 0;
     padding: 0;
   }
+  body{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
   #header{
     background-color: darkblue;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    margin: 0;
+    width: 100%;
+    grid-row: 1 / 2;
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
   }
   h1{
     color: white;
@@ -31,10 +40,13 @@
     color: darkblue;
     background-color: white;
   }
-  form{
+  #form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-row: 4 / 5;
   }
   #email{
     width: 50%;
@@ -44,4 +56,27 @@
   }
   #video{
     width: 100%;
+    grid-row: 3 / 4;
+  }
+  #images{
+    width: 100%;
+    grid-row: 2 / 3;
+  }
+  #image-1{
+    width: 65%;
+  }
+  #image-2{
+    width: 35%;
+  }
+  #mens{
+    grid-row: 5 / 6;
+  }
+  #womens{
+    grid-row: 6 / 7;
+  }
+  #kids{
+    grid-row: 7 / 8;
+  }
+  #brand-new{
+    grid-row: 8 / 9;
   }
