@@ -6,7 +6,7 @@
   body{
     display: grid;
     margin: 0;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
   }
   #header{
     background-color: #2700ff;
@@ -15,8 +15,7 @@
     margin: 0;
     width: 100%;
     grid-row: 1 / 2;
-    position: -webkit-sticky;
-    position: sticky; 
+    position: relative; 
     top: 0;
     z-index: 999;
   }
@@ -95,25 +94,42 @@
     background-color: #2700ff;
   }
   .cycle-imgs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0.5em;
+    display: grid;
+    grid-template-columns:0.5em
+    calc(35% - 3em) 0.5em calc(35% - 3em) 1em calc(35% - 3em) 1em calc(35% - 3em) 1em;
+    grid-auto-flow: column;
     z-index: 1;
-    width: 100%;
+    width: 92vw;
     height: fit-content;
     overflow-x: scroll;
     scrollbar-width: thin;
-    
-    padding: 1em;
     background-color: rgb(243, 243, 243);
-    
   }
   .menclothes{
-    width: 40%;
-    height: 40%;
+    width: 20em;
   }
-  
+  .mc-1{
+    grid-column: 2 / 3 ;
+    
+  }
+  .mc-2{
+    grid-column: 4 / 5 ;
+  }
+  .mc-3{
+    grid-column: 6 / 7 ;
+  }
+  .mc-4{
+    grid-column: 8 / 9 ;
+  }
+  .womenclothes{
+    width: 20em;
+  }
+  .kidclothes{
+    width: 20em;
+  }
+  .newclothes{
+    width: 20em;
+  }
   @media (max-width: 750px){
     #image-1{
       width: 100%;
