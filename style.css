@@ -3,6 +3,9 @@
     
     padding: 0;
   }
+  :root{
+    --background-color: #2700ff;
+  }
   body{
     display: grid;
     margin: 0;
@@ -10,7 +13,7 @@
     font-family: 'Open Sans', sans-serif;
   }
   #header{
-    background-color: #2700ff;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -45,7 +48,7 @@
     text-align: center;
   }
   .nav-link:hover{
-    color: #2700ff;
+    color: var(--background-color);
     background-color: white;
   }
   #form{
@@ -66,7 +69,7 @@
     margin-top: 1em;
     width: 25%;
     color: white;
-    background-color: #2700ff;
+    background-color: var(--background-color);
     border-color: white;
   }
   #video{
@@ -111,7 +114,7 @@
   #footer{
     width: 100%;
     height: 10em;
-    background-color: #2700ff;
+    background-color: var(--background-color);
     grid-column: 1 / 3;
   }
   .cycle-imgs{
