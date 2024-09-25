@@ -7,6 +7,7 @@
     display: grid;
     margin: 0;
     grid-template-rows: repeat(auto, 1fr);
+    font-family: 'Open Sans', sans-serif;
   }
   #header{
     background-color: #2700ff;
@@ -15,7 +16,8 @@
     margin: 0;
     width: 100%;
     grid-row: 1 / 2;
-    position: relative; 
+    position: -webkit-sticky; 
+    position: sticky; 
     top: 0;
     z-index: 999;
   }
@@ -31,6 +33,7 @@
     flex-direction: row;
     gap: 1em;
     margin: auto 0.25em auto 0;
+    
   }
   .nav-link{
     border: 2px solid white;
@@ -109,19 +112,20 @@
   }
   .menclothes{
     width: 15em;
+    transition: 0.5s;
   }
   .menclothes:hover{
-    filter: brightness(50%);
+    filter: brightness(70%);
   }
   
   .womenclothes{
-    width: 40%;
+    width: 15em;
   }
   .kidclothes{
-    width: 40%;
+    width: 15em;
   }
   .newclothes{
-    width: 40%;
+    width: 15em;
   }
   @media (max-width: 750px){
     #image-1{
