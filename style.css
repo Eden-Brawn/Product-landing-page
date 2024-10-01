@@ -11,17 +11,45 @@
   height: 15vh;
   width: 100%;
   z-index: 999;
+  border-bottom: solid 1px black;
 }
 .menclothes, .womenclothes, .kidclothes, .newclothes{
-  width: 50%;
+  width: 150%;
+  height: auto;
+  object-fit: cover;
+  margin: 1em;
 }
+.menclothes:hover, .womenclothes:hover, .kidclothes:hover, .newclothes:hover{
+    filter: brightness(70%);
+  }
 #image-1{
   width:100%;
+  height: auto;
+  object-fit: cover;
   margin-top: 15vh;
 }
 #image-2{
   width: 33.33333333%;
+  height: auto;
+  object-fit: cover;
 }
 video{
   width: 100%;
 }
+.cycle-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+    overflow-x: scroll;
+    scrollbar-width: thin; 
+    scrollbar-color:  lightgrey white;
+    gap:7.5em;
+  }
+  #mens, #womens, #kids, #brand-new{
+    margin-bottom: 1em;
+  }
