@@ -34,7 +34,10 @@
   object-fit: cover;
 }
 video{
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .cycle-imgs{
     display: flex;
